@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Team Supply - Ordering</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="HTSstyle.css">
+  <link rel="Shortcut Icon" href="images/Trophy-Icon-Blue.png" />
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="images/bannermod.png" width="277" height="75"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="HTSindex.htm">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HTStrophy.htm">Trophies & Engraving</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HTSembroidery.htm">Embroidery & Screen Printing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Signs & Banners</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Uniforms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">School Jackets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="HTSordering.htm">Ordering <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<hr>
+<div class="container" id="indexbody">
+  <div class="row">
+    <div class="col">
+        <div class="form">
+          <h2>Order Form</h2>
+            <form method="POST" action="http://hometeamsupply.com/cgi-bin/formmail">
+            <p>
+            <label>Name:
+            <input type="text" name="name" size=30 required>
+            </label> 
+            </p>
+            <p>
+            <label>E-mail: 
+            <input type="email" name="email_address" size=30 required>
+            </label>
+            </p>
+            <p>
+            <label>Order:</label><br>
+            <textarea name="order" placeholder="Enter Order Here" rows="4" cols="50" required></textarea>
+            </p>
+            <p><button>Submit</button>   <button type="Reset">Reset</button></p> 
+            <br>
+            <input TYPE="hidden" NAME="recipient" VALUE="donrobinson@hometeamsupply.com">
+            <input type="hidden" name="subject" value="HTS Online Order - E-Commerce"> 
+            <input type="hidden" name="title" value="HTS Online Order - E-Commerce"> 
+            <input type=hidden name="redirect" value="http://www.hometeamsupply.com/HTSthanks.htm">
+            <input type="hidden" name="return_link_url" value="http://www.hometeamsupply.com/HTSthanks.htm"> 
+            <input type="hidden" name="return_link_title" value="http://www.hometeamsupply.com/HTSthanks.htm"> 
+            <input TYPE="hidden" NAME="email" VALUE="postmaster@hometeamsupply.com">
+            <input type="hidden" name="background" value=""> 
+            <input type=hidden name="required" value="name,email,order">
+            <input type=hidden name="sort" value="order:="name,email,order"> 
+  <!--End private fields--> 
+  <input TYPE="hidden" NAME="env_report" VALUE="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT"></p> 
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h6><strong>Sitemap</strong></h6>
+        <ul class="footerbar">
+          <li>Home</li>
+          <li>Trophies & Engraving</li>
+          <li>Embroidery & Screen Printing</li>
+          <li>Signs & Banners</li>
+          <li>Uniforms</li>
+          <li>School Jackets</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h6><strong>Help and Support</strong></h6>
+      <ul class="footerbar">
+          <li><a href="http://www.hometeamsupply.com/hts8.htm">About</a></li>
+          <li><a href="#">Ordering</a></li>
+          <li><a href="#">Directions</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h6><strong>Hours of Operation</strong></h6>
+      <ul class="footerbar">
+        M:  8:00am - 5:00pm <br>
+        T: &nbsp 8:00am - 5:00pm <br>
+        W:  8:00am - 5:00pm <br>
+        R: &nbsp 8:00am - 7:00pm <br>
+        F: &nbsp 8:00am - 5:00pm <br>
+        S: &nbsp 8:00am - 12:00pm <br>
+        Closed Sunday <br>
+      </ul>
+    </div>
+
+    <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.6128409081666!2d-72.6499174003905!3d41.55708372663764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e64a42ce4d85db%3A0x9592270dd0b1b87!2s24+Broad+St%2C+Middletown%2C+CT+06457!5e0!3m2!1sen!2sus!4v1532174792682" width="200" height="150" frameborder="0" style="border:2px black" allowfullscreen></iframe><br>
+    </div>
+  </div>
+
+</footer>
+<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script type="text/javascript" src="HTSscript.js"></script>
+</body>
+</html>
