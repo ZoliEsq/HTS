@@ -6,6 +6,7 @@ footer {
 	background: #C8A78CCC;
 	font-size: 14px;
 	text-align: justify;
+	font-family: sans-serif;
 }
 body {
   display: block;
@@ -16,11 +17,12 @@ body {
   z-index: -10;
   background: url(images/background.jpg) center center;
 }
-.navbar {
-    background-color: #FFFFFFD9 !important;
-}
 #indexbody {
 	background: #FFFFFFB3;
+	font-family: sans-serif;
+}
+.ht {
+	font-size: 17px;
 }
 .teimages {
 	text-align: center;
@@ -45,6 +47,18 @@ body {
 .container {
 	border-radius: 8px;
 }
-.content-center h2 {
-	text-shadow: 2px black;
+
+.page-header .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #C8A78CCC;
+  text-shadow: 3px 3px black !important;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 880px;
 }
