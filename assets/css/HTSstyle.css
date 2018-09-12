@@ -20,19 +20,11 @@ body {
 #indexbody {
 	background: #FFFFFFB3;
 	font-family: sans-serif;
+	border-style:  outset;
+	padding: 20px;
 }
 .ht {
 	font-size: 17px;
-}
-.teimages {
-	text-align: center;
-	margin: 10px;
-}
-.teimages img {
-	border: 2px black solid;
-	box-shadow: 2px;
-	text-align: center;
-	margin: 10px;
 }
 .content {
 	text-align: justify;
@@ -41,13 +33,58 @@ body {
 .content h2 {
 	text-align: center;
 }
-.imgfloatright {
+.ifr {
 	float: right;
 }
-.container {
-	border-radius: 8px;
+
+.ifl {
+	float: left;
 }
 
+.embroidery {
+	width: 60%;
+}
+.empic {
+	width: 30%;
+	margin-left: 80px;
+}
+.em1 {
+	transform: rotate(-20deg);
+	background: white;
+	height: 250px;
+	width: 250px;
+	box-shadow: 5px 5px 2px grey;
+	margin: auto;
+	text-align: center;
+}
+
+.em1 img {
+	height: 80%;
+	width: 100%;
+	padding: 10px;
+	;
+}
+.sp1 {
+	transform: rotate(20deg);
+	background: white;
+	height: 250px;
+	width: 250px;
+	box-shadow: 5px 5px 2px grey;
+	margin: auto;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.sp1 img {
+	height: 80%;
+	width: 100%;
+	padding: 10px;
+}
+.pf {
+	font-family: 'Permanent Marker', cursive;
+	margin: auto;
+	font-size: 24px;
+}
 .page-header .content-center {
   position: absolute;
   top: 50%;
@@ -56,8 +93,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: #C8A78CCC;
-  text-shadow: 3px 3px black !important;
+  color: #C8A78C;
+  text-shadow: 3px 3px 2px black !important;
   padding: 0 15px;
   width: 100%;
   max-width: 880px;
