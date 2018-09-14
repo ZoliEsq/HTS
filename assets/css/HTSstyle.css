@@ -99,6 +99,20 @@ body {
   width: 100%;
   max-width: 880px;
 }
+.cat-page-header .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #C8A78C;
+  text-shadow: 3px 3px 2px black !important;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 880px;
+}
 .hoo {
 	text-align: center;
 }
