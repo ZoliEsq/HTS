@@ -119,3 +119,10 @@ body {
 .bg-primary {
   background-color: #C8A78CCC !important;
 }
+.catalogs {
+	list-style-type: none;
+}
+.catalogs .li {
+	padding: 0px !important;
+	margin: 0px !important;
+}
