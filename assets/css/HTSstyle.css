@@ -3,10 +3,11 @@
 	padding-left: 0;
 }
 footer {
-	background: #C8A78CCC;
-	font-size: 14px;
-	text-align: justify;
+	background: #C8A78CCC
 	font-family: sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: white;
 }
 body {
   display: block;
@@ -119,3 +120,16 @@ body {
 .bg-primary {
   background-color: #C8A78CCC !important;
 }
+.catalogs {
+	list-style-type: none;
+}
+.catalogs .li {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+/*.ai {
+	box-shadow: 2px black;
+	border: 3px black;
+}
+*/
