@@ -127,7 +127,15 @@ body {
 	padding: 0px !important;
 	margin: 0px !important;
 }
-
+a:link {
+	color: #213876CC;
+}
+a:visited {
+	color: #788BC0;
+}
+/*.ch {
+	font-family: Tahoma, Geneva, sans-serif;
+}*/
 /*.ai {
 	box-shadow: 2px black;
 	border: 3px black;
