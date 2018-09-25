@@ -27,9 +27,17 @@ body {
 .ht {
 	font-size: 17px;
 	line-height:22px;
+	text-align: justify;
+}
+.sb {
+	margin-top: 70px;
+	font-size: 17px;
+	line-height:22px;
+	text-align: justify;
 }
 .ul {
 	text-decoration: underline;
+	margin-top: 30px;
 }
 .sechead {
 	text-align: center;
@@ -47,16 +55,16 @@ body {
 	line-height: 10px;
 }
 .signban {
-	width: 50%;
+	width: 52%;
 	line-height: 10px;
 }
 .empic {
-	width: 30%;
-	margin-left: 80px;
+	width: 32%;
+	margin-left: 90px;
 }
 .signbanpic {
 	width: 40%;
-	margin-right: 80px;
+	margin-right: 90px;
 }
 .em1 {
 	transform: rotate(-20deg);
@@ -218,4 +226,13 @@ a:visited {
 	width: 40%;
 	margin-right: 30px;
 	box-shadow: 3px 3px 2px 2px grey;
+	border: 1.5px solid black;
 }
+.sjimg {
+	float: right;
+	width: 40%;
+	margin-left: 30px;
+	box-shadow: 3px 3px 2px 2px grey;
+	border: 1.5px solid black;
+}
+
