@@ -271,18 +271,46 @@
           <hr>
           <form method="POST" action="http://hometeamsupply.com/cgi-bin/formmail">
             <p>
-            <label>Name:
-            <input type="text" name="name" size=30 required>
-            </label> 
+              <label>Name:
+              <input type="text" name="name" size=30 required>
+              </label> 
+              <label>E-mail: 
+              <input type="email" name="email_address" size=30 required>
+              </label>
             </p>
             <p>
-            <label>E-mail: 
-            <input type="email" name="email_address" size=30 required>
-            </label>
+              <label>Catalog:</label>
+              <select name="catalog">
+                <optgroup label="Apparel & Accessories">
+                  <option>Pennant Sportwear 2018</option>
+                  <option>Alphaborder Apparel & Accessories</option>
+                  <option>SanMar Apparel, Bags, & Caps</option>
+                </optgroup>
+                <optgroup label="Trophies, Awards & Engravables">
+                  <option>Corporate Awards & Gifts</option>
+                  <option>Sports Awards & Gifts</option>
+                  <option>General Awards</option>
+                  <option>Engravables & Gifts</option>
+                  <option>Trophies & Accessories</option>
+                </optgroup>
+                <optgroup label="Workwear & School Jackets">
+                  <option>GAME Workwear & School Jackets</option>
+                </optgroup>
+                <optgroup label="Uniforms and Teamwear">
+                  <option>Badger Sports 2018</option>
+                  <option>Augusta/Holloway/High-Five 2018</option>
+                  <option>Alphaborder Team 365</option>
+                  <option>Teamwork Athletic Apparel</option>
+                </optgroup>
+              </select>
             </p>
             <p>
             <label>Order:</label><br>
             <textarea name="order" placeholder="Enter Order Here" rows="4" cols="50" required></textarea>
+            </p>
+            <p>
+            <label>Logo Upload:</label><br>
+            <input type="file" name="image" accept="image/*"> 
             </p>
             <p><button>Submit</button>   <button type="Reset">Reset</button></p> 
             <br>
@@ -295,7 +323,7 @@
             <input TYPE="hidden" NAME="email" VALUE="postmaster@hometeamsupply.com">
             <input type="hidden" name="background" value=""> 
             <input type=hidden name="required" value="name,email,order">
-            <input type=hidden name="sort" value="order:="name,email,order"> 
+            <input type=hidden name="sort" value="order:="name,email,catalog,order,file"> 
              <!--End private fields--> 
             <input TYPE="hidden" NAME="env_report" VALUE="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT"></p> 
             </form>

@@ -61,6 +61,8 @@ body {
 .empic {
 	width: 22%;
 	margin-left: 90px;
+	min-width: 225px !important;
+	max-height: 550px !important;
 }
 .signbanpic {
 	width: 40%;
