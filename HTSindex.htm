@@ -269,9 +269,9 @@
         <div class="content trophy">
           <h3 class="h3-seo sechead">Ordering</h3>
           <hr>
-          <form method="POST" action="http://hometeamsupply.com/cgi-bin/formmail">
+          <form enctype="multipart/form-data" method="POST" action="http://hometeamsupply.com/cgi-bin/formmail">
             <p>
-              <label>Name:
+              <label style="margin-right: 100px">Name:
               <input type="text" name="name" size=30 required>
               </label> 
               <label>E-mail: 
@@ -312,9 +312,10 @@
             <label>Logo Upload:</label><br>
             <input type="file" name="image" accept="image/*"> 
             </p>
+            <input type="submit">
             <p><button>Submit</button>   <button type="Reset">Reset</button></p> 
             <br>
-            <input TYPE="hidden" NAME="recipient" VALUE="donrobinson@hometeamsupply.com">
+            <input type=hidden name="recipient" value="sales@hometeamsupply.com">
             <input type="hidden" name="subject" value="HTS Online Order - E-Commerce"> 
             <input type="hidden" name="title" value="HTS Online Order - E-Commerce"> 
             <input type=hidden name="redirect" value="http://www.hometeamsupply.com/HTSthanks.htm">
@@ -323,7 +324,7 @@
             <input TYPE="hidden" NAME="email" VALUE="postmaster@hometeamsupply.com">
             <input type="hidden" name="background" value=""> 
             <input type=hidden name="required" value="name,email,order">
-            <input type=hidden name="sort" value="order:="name,email,catalog,order,file"> 
+            <input type=hidden name="sort" value="order:="name,email,catalog,order,image"> 
              <!--End private fields--> 
             <input TYPE="hidden" NAME="env_report" VALUE="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT"></p> 
             </form>
