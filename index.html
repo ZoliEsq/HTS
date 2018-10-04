@@ -12,10 +12,10 @@
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
   <link href="./assets/css/HTSstyle.css" rel="stylesheet">
-	<link rel="Shortcut Icon" href="images/Trophy-Icon-Blue.png" />
+	<link rel="Shortcut Icon" href="./assets/img/Trophy-Icon-Blue.png" />
 
 </head>
-<body class="index-page sidebar-collapse" style="background: url(images/background.jpg) center center">
+<body class="index-page sidebar-collapse" style="background: url(./assets/img/background.jpg) center center">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
@@ -45,11 +45,14 @@
               <a class="dropdown-item" id="sign-button" href="javascript:void(0)">
                 Signs & Banners
               </a>
-              <a class="dropdown-item" target="_blank" href="https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html">
+              <a class="dropdown-item"  id="work-button" href="javascript:void(0)">
                 Workwear & School Jackets
               </a>
-              <a class="dropdown-item" target="_blank" href="https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html">
+              <a class="dropdown-item"  id="uni-button" href="javascript:void(0)">
                 Uniforms & Teamwear
+              </a>
+              <a class="dropdown-item"  id="order-button" href="javascript:void(0)">
+                Ordering
               </a>
             </div>
           </li>
@@ -183,10 +186,10 @@
         </div>
         <div class="content empic" id="indexbody">
           <div class="em1">
-            <img src="images/em1.png"><a class="pf">Embroidery</a>
+            <img src="./assets/img/em1.png"><a class="pf">Embroidery</a>
           </div>
           <div class="sp1">
-            <img src="images/sp1.jpg"><a class="pf">Screen Printing</a>
+            <img src="./assets/img/sp1.jpg"><a class="pf">Screen Printing</a>
           </div>
         </div>
     </div>
@@ -233,7 +236,7 @@
   <div class="container" id="indexbody">
     <div class="row">
       <div class="col">
-        <div class="content trophy">
+        <div class="content work">
           <img class="sjimg" src="./assets/img/wwimg1.jpg"></a>
           <h3 class="h3-seo sechead">Workwear & School Jackets</h3>
           <hr>
@@ -247,7 +250,7 @@
   <div class="container" id="indexbody">
     <div class="row">
       <div class="col">
-        <div class="content trophy">
+        <div class="content uniform">
           <div class="unipic1">
             <img class="uniimg"src="./assets/img/twimg1.jpg"><a class="spf">Uniforms</a>
           </div>
@@ -266,10 +269,10 @@
   <div class="container" id="indexbody">
     <div class="row">
       <div class="col">
-        <div class="content trophy">
+        <div class="content order">
           <h3 class="h3-seo sechead">Ordering</h3>
           <hr>
-          <form enctype="multipart/form-data" method="POST" action="./send-email-form.php">
+          <form method="POST" enctype="multipart/form-data" action="./assets/js/formmail1.pl">
             <p>
               <label style="margin-right: 100px">Name:
               <input type="text" name="name" size=30 required>
@@ -312,8 +315,11 @@
             <label>Logo Upload:</label><br>
             <input type="file" name="image" accept="image/*"> 
             </p>
-            <div class="g-recaptcha" data-sitekey="6LeDRnMUAAAAAK9KBQF1sdQTSz6LDwlKm9QFefpC"></div>
-            <p><button>Submit</button>   <button type="Reset">Reset</button></p> 
+            <div class="g-recaptcha" data-callback="capcha_filled" data-expired-callback="capcha_expired" data-sitekey="6LeDRnMUAAAAAK9KBQF1sdQTSz6LDwlKm9QFefpC"></div>
+            <p>
+              <input type="submit" name="submit"></input>  
+              <button type="Reset">Reset</button>
+            </p> 
             <br>
             <input TYPE="hidden" NAME="recipient" VALUE="donrobinson@hometeamsupply.com">
             <input type="hidden" name="subject" value="HTS Online Order - E-Commerce"> 
