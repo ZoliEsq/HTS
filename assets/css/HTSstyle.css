@@ -280,6 +280,7 @@ a:visited {
 
 input,
 textarea,
+select,
 .logofile {
 	background: white !important;
 }
