@@ -1,10 +1,8 @@
-.footerbar{
+.footerbar {
 	list-style-type: none;
 	padding-left: 0;
 }
 footer {
-	background: #C8A78CCC
-	font-family: sans-serif;
 	font-size: 10px;
 	text-align: center;
 	color: white;
@@ -245,17 +243,6 @@ a:link {
 a:visited {
 	color: #788BC0;
 }
-/*.ch {
-	font-family: Tahoma, Geneva, sans-serif;
-}
-.abimg {
-	box-shadow: 2px black;
-	border: 3px black;
-	float: right;
-	width: 40%;
-	margin: 20px;
-}*/
-
 .troimg {
 	float: left;
 	width: 40%;
@@ -289,4 +276,10 @@ a:visited {
 .catdrop {
 	height: 500px !important;
 	overflow: auto !important;
+}
+
+input,
+textarea,
+.logofile {
+	background: white !important;
 }
