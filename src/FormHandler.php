@@ -42,10 +42,10 @@ class FormHandler
 		$this->mailer = new PHPMailer;
 		$this->mail_template='';
 
-		$this->mailer->Subject = "HTS E-Commerce Order!";
+		$this->mailer->Subject = "A New HTS E-Commerce Order Has Arrived!";
 
 		$host = isset($_SERVER['SERVER_NAME'])?$_SERVER['SERVER_NAME']:'localhost';
-        $from_email ='forms@'.$host;
+        $from_email ='postmaster@'.$host;
    		$this->mailer->setFrom($from_email,'HTS E-Commerce',false);  
 
    		$this->captcha = false;   
