@@ -10,6 +10,7 @@ var sign = document.querySelector(".signban");
 var work = document.querySelector(".work");
 var uniform = document.querySelector(".uniform");
 var order = document.querySelector(".order");
+var menu = document.getElementById("catalog");
 
 function scrollToEmbroidery() {
 	embroidery.scrollIntoView({
@@ -41,8 +42,32 @@ function scrollToOrder() {
 		behavior: 'smooth'
 	});
 }
+function myFunction() {
+    var x = document.getElementById("appoptdiv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
+function generateData(event) {
+  var appdiv = document.getElementById("appoptdiv");
+  var trodiv = document.getElementById("trooptdiv");
+  var workdiv = document.getElementById("workoptdiv");
+  var teamdiv = document.getElementById("teamoptdiv");
+  if (menu.value == 'app') {
+        appdiv.style.display = "block";
+  } else if (menu.value == 'tro') {
+        trodiv.style.display = "block";
+  } else if (menu.value == 'work') {
+        workdiv.style.display = "block";
+  } else if (menu.value == 'team') {
+        teamdiv.style.display = "block";
+  }
+}
 
+menu.addEventListener("change", generateData);
 embutton.addEventListener("click", scrollToEmbroidery);
 trobutton.addEventListener("click", scrollToTrophy);
 signbutton.addEventListener("click", scrollToSign);
