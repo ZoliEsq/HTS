@@ -1,49 +1,49 @@
-var embutton = document.getElementById("em-button");
-var trobutton = document.getElementById("tro-button");
-var signbutton = document.getElementById("sign-button");
-var workbutton = document.getElementById("work-button");
-var unibutton = document.getElementById("uni-button");
-var orderbutton = document.getElementById("order-button");
-var embroidery = document.querySelector(".embroidery");
-var trophy = document.querySelector(".trophy");
-var sign = document.querySelector(".signban");
-var work = document.querySelector(".work");
-var uniform = document.querySelector(".uniform");
-var order = document.querySelector(".order");
-var menu = document.getElementById("catalog");
+const embutton = document.getElementById("em-button");
+const trobutton = document.getElementById("tro-button");
+const signbutton = document.getElementById("sign-button");
+const workbutton = document.getElementById("work-button");
+const unibutton = document.getElementById("uni-button");
+const orderbutton = document.getElementById("order-button");
+const embroidery = document.querySelector(".embroidery");
+const trophy = document.querySelector(".trophy");
+const sign = document.querySelector(".signban");
+const work = document.querySelector(".work");
+const uniform = document.querySelector(".uniform");
+const order = document.querySelector(".order");
+const menu = document.getElementById("catalog");
 
-function scrollToEmbroidery() {
+const scrollToEmbroidery = () => {
 	embroidery.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToTrophy() {
+const scrollToTrophy = () => {
 	trophy.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToSign() {
+const scrollToSign = () => {
 	sign.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToWork() {
+const scrollToWork = () => {
 	work.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToUniform() {
+const scrollToUniform = () => {
 	uniform.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToOrder() {
+const scrollToOrder = () => {
 	order.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function myFunction() {
-    var x = document.getElementById("appoptdiv");
+const myFunction = () => {
+    const x = document.getElementById("appoptdiv");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
@@ -51,11 +51,11 @@ function myFunction() {
     }
 }
 
-function generateData(event) {
-  var appdiv = document.getElementById("appoptdiv");
-  var trodiv = document.getElementById("trooptdiv");
-  var workdiv = document.getElementById("workoptdiv");
-  var teamdiv = document.getElementById("teamoptdiv");
+const generateData = (event) => {
+  const appdiv = document.getElementById("appoptdiv");
+  const trodiv = document.getElementById("trooptdiv");
+  const workdiv = document.getElementById("workoptdiv");
+  const teamdiv = document.getElementById("teamoptdiv");
   if (menu.value == 'app') {
         appdiv.style.display = "block";
   } else if (menu.value == 'tro') {
