@@ -56,13 +56,17 @@ const generateData = (event) => {
   const trodiv = document.getElementById("trooptdiv");
   const workdiv = document.getElementById("workoptdiv");
   const teamdiv = document.getElementById("teamoptdiv");
-  if (menu.value == 'app') {
+  const appcat = { "Pennant Sportswear 2018": "", "Alphaborder Apparel & Acceessories": "", "SanMar Apparel, Bags, & Caps": "" };
+  const trocat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
+  const workcat = { "GAME Workwear & School Jackets": "" };
+  const teamcat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
+  if (menu.value in appcat) {
         appdiv.style.display = "block";
-  } else if (menu.value == 'tro') {
+  } else if (menu.value in appcat) {
         trodiv.style.display = "block";
-  } else if (menu.value == 'work') {
+  } else if (menu.value in workcat) {
         workdiv.style.display = "block";
-  } else if (menu.value == 'team') {
+  } else if (menu.value in appcat) {
         teamdiv.style.display = "block";
   }
 }
