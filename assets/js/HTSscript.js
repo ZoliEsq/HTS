@@ -1,74 +1,80 @@
-var embutton = document.getElementById("em-button");
-var trobutton = document.getElementById("tro-button");
-var signbutton = document.getElementById("sign-button");
-var workbutton = document.getElementById("work-button");
-var unibutton = document.getElementById("uni-button");
-var orderbutton = document.getElementById("order-button");
-var embroidery = document.querySelector(".embroidery");
-var trophy = document.querySelector(".trophy");
-var sign = document.querySelector(".signban");
-var work = document.querySelector(".work");
-var uniform = document.querySelector(".uniform");
-var order = document.querySelector(".order");
+const embutton = document.getElementById("em-button");
+const trobutton = document.getElementById("tro-button");
+const signbutton = document.getElementById("sign-button");
+const workbutton = document.getElementById("work-button");
+const unibutton = document.getElementById("uni-button");
+const orderbutton = document.getElementById("order-button");
+const embroidery = document.querySelector(".embroidery");
+const trophy = document.querySelector(".trophy");
+const sign = document.querySelector(".signban");
+const work = document.querySelector(".work");
+const uniform = document.querySelector(".uniform");
+const order = document.querySelector(".order");
+const menu = document.getElementById("catalog");
 
-function scrollToEmbroidery() {
+const scrollToEmbroidery = () => {
 	embroidery.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToTrophy() {
+const scrollToTrophy = () => {
 	trophy.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToSign() {
+const scrollToSign = () => {
 	sign.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToWork() {
+const scrollToWork = () => {
 	work.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToUniform() {
+const scrollToUniform = () => {
 	uniform.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
-function scrollToOrder() {
+const scrollToOrder = () => {
 	order.scrollIntoView({
 		behavior: 'smooth'
 	});
 }
+const myFunction = () => {
+    const x = document.getElementById("appoptdiv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
+const generateData = (event) => {
+  const appdiv = document.getElementById("appoptdiv");
+  const trodiv = document.getElementById("trooptdiv");
+  const workdiv = document.getElementById("workoptdiv");
+  const teamdiv = document.getElementById("teamoptdiv");
+  const appcat = { "Pennant Sportswear 2018": "", "Alphaborder Apparel & Acceessories": "", "SanMar Apparel, Bags, & Caps": "" };
+  const trocat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
+  const workcat = { "GAME Workwear & School Jackets": "" };
+  const teamcat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
+  if (menu.value in appcat) {
+        appdiv.style.display = "block";
+  } else if (menu.value in appcat) {
+        trodiv.style.display = "block";
+  } else if (menu.value in workcat) {
+        workdiv.style.display = "block";
+  } else if (menu.value in appcat) {
+        teamdiv.style.display = "block";
+  }
+}
 
+menu.addEventListener("change", generateData);
 embutton.addEventListener("click", scrollToEmbroidery);
 trobutton.addEventListener("click", scrollToTrophy);
 signbutton.addEventListener("click", scrollToSign);
 workbutton.addEventListener("click", scrollToWork);
 unibutton.addEventListener("click", scrollToUniform);
 orderbutton.addEventListener("click", scrollToOrder);
-
-// const url = './process.php';
-// const form = document.querySelector('form');
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
-
-//     const files = document.querySelector('[type=file]').files;
-//     const formData = new FormData();
-
-//     for (let i = 0; i < files.length; i++) {
-//         let file = files[i];
-
-//         formData.append('files[]', file);
-//     }
-
-//     fetch(url, {
-//         method: 'POST',
-//         body: formData
-//     }).then(response => {
-//         console.log(response);
-//     });
-// });

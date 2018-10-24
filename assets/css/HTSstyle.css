@@ -280,6 +280,17 @@ a:visited {
 
 input,
 textarea,
-.logofile {
-	background: white !important;
+select {
+	background: rgb(255, 255, 255) !important;
+	border: none !important;
+	margin: 3px;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */	
+  box-sizing: none !important;
 }
