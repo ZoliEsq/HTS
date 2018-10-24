@@ -1,4 +1,3 @@
-
 const embutton = document.getElementById("em-button");
 const trobutton = document.getElementById("tro-button");
 const signbutton = document.getElementById("sign-button");
@@ -79,4 +78,3 @@ signbutton.addEventListener("click", scrollToSign);
 workbutton.addEventListener("click", scrollToWork);
 unibutton.addEventListener("click", scrollToUniform);
 orderbutton.addEventListener("click", scrollToOrder);
-
