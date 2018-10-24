@@ -57,16 +57,16 @@ const generateData = (event) => {
   const workdiv = document.getElementById("workoptdiv");
   const teamdiv = document.getElementById("teamoptdiv");
   const appcat = { "Pennant Sportswear 2018": "", "Alphaborder Apparel & Acceessories": "", "SanMar Apparel, Bags, & Caps": "" };
-  const trocat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
-  const workcat = { "GAME Workwear & School Jackets": "" };
-  const teamcat = { "Pennant": "", "Alphaborder": "", "Sanmar": "" };
+  const trocat = { "Greystone Corporate": "", "Greystone Sports": "", "Greystone Awards": "", "JDS Catalog": "", "Marco Awards": "" };
+  const workcat = { "GAME Workwear & School Jackets": "", "Sanmar": "" };
+  const teamcat = { "Badger Sports 2018": "", "Augusta/Holloway/High-Five 2018": "", "Alphaborder Team 365": "", "Teamwork Athletic Apparel": "" };
   if (menu.value in appcat) {
         appdiv.style.display = "block";
-  } else if (menu.value in appcat) {
+  } else if (menu.value in trocat) {
         trodiv.style.display = "block";
   } else if (menu.value in workcat) {
         workdiv.style.display = "block";
-  } else if (menu.value in appcat) {
+  } else if (menu.value in teamcat) {
         teamdiv.style.display = "block";
   }
 }
