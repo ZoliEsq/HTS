@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -135,12 +134,6 @@
               <p class="d-lg-none d-xl-none">Yelp</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <p class="d-lg-none d-xl-none">Instagram</p>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
@@ -156,6 +149,7 @@
         </div>
       </div>
     </div>
+  </div>
   <hr>
   <div class="container about" id="indexbody">
     <div class="row">
@@ -229,7 +223,7 @@
         <div class="content signban" id="indexbody">
           <h3 class="h3-seo sechead">Signs & Banners</h3>
           <hr>
-          <p class="sb">When it comes to Signs and Banners we have you covered!  We will create a quality look that will show you off in the best way possible!  Weather you are running for policical office, need advertisment for your next big idea Home Team will help you stand out!  We can do break away banners for you sports team, or lettering a vehicle for your new catering company!  Our goal is to keep you looking great and leaving here 100% satisfied!</p>
+          <p class="sb">When it comes to Signs and Banners we have you covered!  We will create a quality look that will show you off in the best way possible!  Weather you are running for political office, or need advertisment for your next big idea, Home Team will help you stand out!  We can do break away banners for you sports team, or lettering a vehicle for your new catering company!  Our goal is to keep you looking great and leaving here 100% satisfied!</p>
         </div>
     </div>
   </div>
@@ -273,6 +267,7 @@
         <div class="content order">
           <h3 class="h3-seo sechead">Ordering</h3>
           <hr>
+          <p class="formdes" style="text-align: center">Once a request is submitted, we will get back to you within 24-48 hours with pricing, issues, and any questions about the order.</p>
           <form role="form" method="post" id="reused_form" enctype="multipart/form-data" >
             <div class="form-row">
               <div class="col-7">
@@ -280,16 +275,20 @@
                 <input type="text" class="form-control" id="name" name="name" required maxlength="50">
                </div>
                <div class="col">
-                <label for="name"> Company: (if applicable)</label>
+                <label for="name"> School or Company: (if applicable)</label>
                 <input type="text" class="form-control" id="company" name="company" maxlength="50">
               </div>
             </div>
             <div class="form-row">
-              <div class="col-6">
+              <div class="col-4">
                 <label for="name"> Street Address:</label>
                 <input type="text" class="form-control" id="stadd" name="stadd" required maxlength="75">
-               </div>
-               <div class="col-2">
+              </div>
+              <div class="col-3">
+                <label for="name"> City:</label>
+                <input type="text" class="form-control" id="stadd" name="city" required maxlength="75">
+              </div>
+              <div class="col-2">
                 <label for="name"> State: </label>
                 <input type="text" class="form-control" id="state" name="state" required maxlength="2">
               </div>
@@ -301,7 +300,7 @@
             <div class="form-row">
               <div class="col-4">
                 <label for="name"> Phone: </label>
-                <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)xxx-xxxx" required maxlength="15">
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required maxlength="15">
               </div>
               <div class="col">
                 <label for="email"> Email:</label>
@@ -313,25 +312,25 @@
               <select name="catalog" class="form-control" id="catalog">
                   <option selected>Choose A Catalog...</option>
                 <optgroup label="Apparel & Accessories">
-                  <option name="Pennant Sportswear 2018" value="app">Pennant Sportwear 2018</option>
-                  <option name="Alphaborder Apparel & Acceessories" value="app">Alphaborder Apparel & Accessories</option>
-                  <option name="SanMar Apparel, Bags, & Caps" value="app">SanMar Apparel, Bags, & Caps</option>
+                  <option value="Pennant Sportswear 2018">Pennant Sportwear 2018</option>
+                  <option value="Alphaborder Apparel & Acceessories">Alphaborder Apparel & Accessories</option>
+                  <option value="SanMar Apparel, Bags, & Caps">SanMar Apparel, Bags, & Caps</option>
                 </optgroup>
                 <optgroup label="Trophies, Awards & Engravables">
-                  <option name="Corporate Awards & Gifts" value="tro">Corporate Awards & Gifts</option>
-                  <option name="Sports Awards & Gifts" value="tro">Sports Awards & Gifts</option>
-                  <option name="General Awards" value="tro">General Awards</option>
-                  <option name="Engravables & Gifts" value="tro">Engravables & Gifts</option>
-                  <option name="Trophies & Accessories" value="tro">Trophies & Accessories</option>
+                  <option value="Greystone Corporate">Corporate Awards & Gifts</option>
+                  <option value="Greystone Sports">Sports Awards & Gifts</option>
+                  <option value="Greystone Awards">General Awards</option>
+                  <option value="JDS Catalog">Engravables & Gifts</option>
+                  <option value="Marco Awards">Trophies & Accessories</option>
                 </optgroup>
                 <optgroup label="Workwear & School Jackets">
-                  <option name="GAME Workwear & School Jackets" value="work">GAME Workwear & School Jackets</option>
+                  <option value="GAME Workwear & School Jackets">GAME Workwear & School Jackets</option>
                 </optgroup>
                 <optgroup label="Uniforms and Teamwear">
-                  <option name="Badger Sports 2018" value="team">Badger Sports 2018</option>
-                  <option name="Augusta/Holloway/High-Five 2018" value="team">Augusta/Holloway/High-Five 2018</option>
-                  <option name="Alphaborder Team 365" value="team">Alphaborder Team 365</option>
-                  <option name="Teamwork Athletic Apparel" value="team">Teamwork Athletic Apparel</option>
+                  <option value="Badger Sports 2018">Badger Sports 2018</option>
+                  <option value="Augusta/Holloway/High-Five 2018">Augusta/Holloway/High-Five 2018</option>
+                  <option value="Alphaborder Team 365">Alphaborder Team 365</option>
+                  <option value="Teamwork Athletic Apparel">Teamwork Athletic Apparel</option>
                 </optgroup>
               </select>
             </div>
@@ -340,16 +339,16 @@
               <div class="form-row">
                 <div class="col-2">
                   <label for="name"> Item Number</label>
-                  <input type="text" class="form-control" id="item" name="item1" required maxlength="10">
+                  <input type="text" class="form-control" id="item" name="item1" maxlength="10">
                 </div>
                 <div class="col-4">
                   <label for="name"> Color: </label>
-                  <input type="text" class="form-control" id="color" name="color1" required maxlength="15">
+                  <input type="text" class="form-control" id="color" name="color1" maxlength="15">
                 </div>
                 <div class="col-2">
                   <label for="name"> Quantity: </label>
                   <select name="quantity1" class="form-control" id="quantity">
-                    <option selected>0</option>
+                    <option selected></option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -363,35 +362,59 @@
                 <div class="col-2">
                   <label for="name"> Size: </label>
                   <select name="size1" class="form-control" id="size">
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>2XL (+$2.00)</option>
-                    <option>3XL (+$2.00)</option>
-                    <option>4XL (+$2.00)</option>
+                    <option selected=""></option>
+                    <optgroup label="Apparel Size">
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>2XL (+$2.00)</option>
+                      <option>3XL (+$2.00)</option>
+                      <option>4XL (+$2.00)</option>
+                    </optgroup>
+                    <optgroup label="Adult Hat Sizes">
+                      <option>S/M (6 7/8 - 7 1/4)</option>
+                      <option>M/L (7 1/8 - 7 1/2)</option>
+                      <option>L/XL (7 3/8 - 7 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Youth Hat Sizes">
+                      <option>Toddler/Child (6 - 6 3/8)</option>
+                      <option>Child/Youth (6 1/2 - 6 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Bags/Totes/Etc.">
+                      <option>N/A</option>
+                    </optgroup>
                   </select>
                 </div>
                 <div class="col-2">
                   <label for="logo"> Logo: </label>
                   <select name="logo1" class="form-control" id="logo">
-                    <option selected="">...</option>
-                    <option>Y</option>
-                    <option>N</option>
+                    <option selected=""></option>
+                    <option>None</option>
+                    <option>Front Full Size</option>
+                    <option>Back Full Size</option>
+                    <option>Right Sleeve</option>
+                    <option>Left Sleeve</option>
+                    <option>Right Chest</option>
+                    <option>Left Chest</option>
+                    <option>Right Leg</option>
+                    <option>Left Leg</option>
+                    <option>Cap Logo Front</option>
+                    <option>Cap Logo Back</option>
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-2">
-                  <input type="text" class="form-control" id="item" name="item2" required maxlength="10">
+                  <input type="text" class="form-control" id="item" name="item2" maxlength="10">
                 </div>
                 <div class="col-4">
-                  <input type="text" class="form-control" id="color" name="color2" required maxlength="15">
+                  <input type="text" class="form-control" id="color" name="color2" maxlength="15">
                 </div>
                 <div class="col-2">
                   <select name="quantity2" class="form-control" id="quantity">   
-                    <option selected>0</option>             
+                    <option selected=""></option>             
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -404,34 +427,58 @@
                 </div>
                 <div class="col-2">
                   <select name="size2" class="form-control" id="size">
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>2XL (+$2.00)</option>
-                    <option>3XL (+$2.00)</option>
-                    <option>4XL (+$2.00)</option>
+                    <option selected=""></option>
+                    <optgroup label="Apparel Size">
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>2XL (+$2.00)</option>
+                      <option>3XL (+$2.00)</option>
+                      <option>4XL (+$2.00)</option>
+                    </optgroup>
+                    <optgroup label="Adult Hat Sizes">
+                      <option>S/M (6 7/8 - 7 1/4)</option>
+                      <option>M/L (7 1/8 - 7 1/2)</option>
+                      <option>L/XL (7 3/8 - 7 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Youth Hat Sizes">
+                      <option>Toddler/Child (6 - 6 3/8)</option>
+                      <option>Child/Youth (6 1/2 - 6 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Bags/Totes/Etc.">
+                      <option>N/A</option>
+                    </optgroup>
                   </select>
                 </div>
                 <div class="col-2">
                   <select name="logo2" class="form-control" id="logo">
-                    <option selected="">...</option>
-                    <option>Y</option>
-                    <option>N</option>
+                    <option selected=""></option>
+                    <option>None</option>
+                    <option>Front Full Size</option>
+                    <option>Back Full Size</option>
+                    <option>Right Sleeve</option>
+                    <option>Left Sleeve</option>
+                    <option>Right Chest</option>
+                    <option>Left Chest</option>
+                    <option>Right Leg</option>
+                    <option>Left Leg</option>
+                    <option>Cap Logo Front</option>
+                    <option>Cap Logo Back</option>
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-2">
-                  <input type="text" class="form-control" id="item" name="item3" required maxlength="10">
+                  <input type="text" class="form-control" id="item" name="item3" maxlength="10">
                 </div>
                 <div class="col-4">
-                  <input type="text" class="form-control" id="color" name="color3" required maxlength="15">
+                  <input type="text" class="form-control" id="color" name="color3" maxlength="15">
                 </div>
                 <div class="col-2">
                   <select name="quantity3" class="form-control" id="quantity">
-                    <option selected>0</option>
+                    <option selected=""></option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -444,34 +491,58 @@
                 </div>
                 <div class="col-2">
                   <select name="size3" class="form-control" id="size">
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>2XL (+$2.00)</option>
-                    <option>3XL (+$2.00)</option>
-                    <option>4XL (+$2.00)</option>
+                    <option selected=""></option>
+                    <optgroup label="Apparel Size">
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>2XL (+$2.00)</option>
+                      <option>3XL (+$2.00)</option>
+                      <option>4XL (+$2.00)</option>
+                    </optgroup>
+                    <optgroup label="Adult Hat Sizes">
+                      <option>S/M (6 7/8 - 7 1/4)</option>
+                      <option>M/L (7 1/8 - 7 1/2)</option>
+                      <option>L/XL (7 3/8 - 7 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Youth Hat Sizes">
+                      <option>Toddler/Child (6 - 6 3/8)</option>
+                      <option>Child/Youth (6 1/2 - 6 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Bags/Totes/Etc.">
+                      <option>N/A</option>
+                    </optgroup>
                   </select>
                 </div>
                 <div class="col-2">
                   <select name="logo3" class="form-control" id="logo">
-                    <option selected="">...</option>
-                    <option>Y</option>
-                    <option>N</option>
+                    <option selected=""></option>
+                    <option>None</option>
+                    <option>Front Full Size</option>
+                    <option>Back Full Size</option>
+                    <option>Right Sleeve</option>
+                    <option>Left Sleeve</option>
+                    <option>Right Chest</option>
+                    <option>Left Chest</option>
+                    <option>Right Leg</option>
+                    <option>Left Leg</option>
+                    <option>Cap Logo Front</option>
+                    <option>Cap Logo Back</option>
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-2">
-                  <input type="text" class="form-control" id="item" name="item4" required maxlength="10">
+                  <input type="text" class="form-control" id="item" name="item4" maxlength="10">
                 </div>
                 <div class="col-4">
-                  <input type="text" class="form-control" id="color" name="color4" required maxlength="15">
+                  <input type="text" class="form-control" id="color" name="color4" maxlength="15">
                 </div>
                 <div class="col-2">
                   <select name="quantity4" class="form-control" id="quantity">
-                    <option selected>0</option>
+                    <option selected=""></option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -484,34 +555,58 @@
                 </div>
                 <div class="col-2">
                   <select name="size4" class="form-control" id="size">
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>2XL (+$2.00)</option>
-                    <option>3XL (+$2.00)</option>
-                    <option>4XL (+$2.00)</option>
+                    <option selected=""></option>
+                    <optgroup label="Apparel Size">
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>2XL (+$2.00)</option>
+                      <option>3XL (+$2.00)</option>
+                      <option>4XL (+$2.00)</option>
+                    </optgroup>
+                    <optgroup label="Adult Hat Sizes">
+                      <option>S/M (6 7/8 - 7 1/4)</option>
+                      <option>M/L (7 1/8 - 7 1/2)</option>
+                      <option>L/XL (7 3/8 - 7 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Youth Hat Sizes">
+                      <option>Toddler/Child (6 - 6 3/8)</option>
+                      <option>Child/Youth (6 1/2 - 6 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Bags/Totes/Etc.">
+                      <option>N/A</option>
+                    </optgroup>
                   </select>
                 </div>
                 <div class="col-2">
                   <select name="logo4" class="form-control" id="logo">
-                    <option selected="">...</option>
-                    <option>Y</option>
-                    <option>N</option>
+                    <option selected=""></option>
+                    <option>None</option>
+                    <option>Front Full Size</option>
+                    <option>Back Full Size</option>
+                    <option>Right Sleeve</option>
+                    <option>Left Sleeve</option>
+                    <option>Right Chest</option>
+                    <option>Left Chest</option>
+                    <option>Right Leg</option>
+                    <option>Left Leg</option>
+                    <option>Cap Logo Front</option>
+                    <option>Cap Logo Back</option>
                   </select>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-2">
-                  <input type="text" class="form-control" id="item" name="item5" required maxlength="10">
+                  <input type="text" class="form-control" id="item" name="item5" maxlength="10">
                 </div>
                 <div class="col-4">
-                  <input type="text" class="form-control" id="color" name="color5" required maxlength="15">
+                  <input type="text" class="form-control" id="color" name="color5" maxlength="15">
                 </div>
                 <div class="col-2">
                   <select name="quantity5" class="form-control" id="quantity">
-                    <option selected>0</option>
+                    <option selected=""></option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -524,42 +619,135 @@
                 </div>
                 <div class="col-2">
                   <select name="size5" class="form-control" id="size">
-                    <option selected> Size </option>
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>2XL (+$2.00)</option>
-                    <option>3XL (+$2.00)</option>
-                    <option>4XL (+$2.00)</option>
+                    <option selected=""></option>
+                    <optgroup label="Apparel Size">
+                      <option>XS</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>2XL (+$2.00)</option>
+                      <option>3XL (+$2.00)</option>
+                      <option>4XL (+$2.00)</option>
+                    </optgroup>
+                    <optgroup label="Adult Hat Sizes">
+                      <option>S/M (6 7/8 - 7 1/4)</option>
+                      <option>M/L (7 1/8 - 7 1/2)</option>
+                      <option>L/XL (7 3/8 - 7 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Youth Hat Sizes">
+                      <option>Toddler/Child (6 - 6 3/8)</option>
+                      <option>Child/Youth (6 1/2 - 6 3/4)</option>
+                    </optgroup>
+                    <optgroup label="Bags/Totes/Etc.">
+                      <option>N/A</option>
+                    </optgroup>
                   </select>
                 </div>
                 <div class="col-2">
                   <select name="logo5" class="form-control" id="logo">
-                    <option selected="">...</option>
-                    <option>Y</option>
-                    <option>N</option>
+                    <option selected=""></option>
+                    <option>None</option>
+                    <option>Front Full Size</option>
+                    <option>Back Full Size</option>
+                    <option>Right Sleeve</option>
+                    <option>Left Sleeve</option>
+                    <option>Right Chest</option>
+                    <option>Left Chest</option>
+                    <option>Right Leg</option>
+                    <option>Left Leg</option>
+                    <option>Cap Logo Front</option>
+                    <option>Cap Logo Back</option>
                   </select>
                 </div>
               </div>
             </div>
             <div id="trooptdiv" style="display: none">
-                Trophy Div
-            </div>
-            <div id="workoptdiv" style="display: none">
-                Work Div
-            </div>
-            <div id="teamoptdiv" style="display: none">
-                Team Div
+              <h6>Trophies And Engraving</h6>
+              <div class="form-row">
+                <div class="col-2">
+                  <label for="name"> Item Number</label>
+                  <input type="text" class="form-control" id="item" name="troitem1" maxlength="10">
+                </div>
+                <div class="col-3">
+                  <label for="name"> Color</label>
+                  <input type="text" class="form-control" id="item" name="trocolor1" maxlength="25">
+                </div>
+                <div class="col">
+                  <label for="name"> Engraving: </label>
+                  <input type="text" class="form-control" id="color" name="troengraving1" maxlength="150">
+                </div>
+                <div class="col-2">
+                  <label for="name"> Quantity: </label>
+                  <select name="troquantity1" class="form-control" id="quantity">
+                    <option selected></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-2">
+                  <input type="text" class="form-control" id="item" name="troitem2" maxlength="10">
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" id="item" name="trocolor2" maxlength="25">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="color" name="troengraving2" maxlength="150">
+                </div>
+                <div class="col-2">
+                  <select name="troquantity2" class="form-control" id="quantity">
+                    <option selected></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-2">
+                  <input type="text" class="form-control" id="item" name="troitem3" maxlength="10">
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" id="item" name="trocolor3" maxlength="25">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="color" name="troengraving3" maxlength="150">
+                </div>
+                <div class="col-2">
+                  <select name="troquantity3" class="form-control" id="quantity">
+                    <option selected></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
+              </div>
             </div>
             <div class="form-group">
-                <label for="name"> Message:</label>
+                <label for="name"> Message:</label> <p class="formdes">(If ordering for team, specify numbers here)</p>
                 <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
             </div>
             <div>
                 <label for="name"> Add A Logo:</label><br>
-                <input type="file" name="image" required >
+                <input type="file" name="image"><br>
             </div>
             <button type="submit" class="btn btn-lg btn-dark pull-right" id="btnContactUs">Submit</button>
           </form>
@@ -581,16 +769,8 @@
 <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="./assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="./assets/js/form.js" type="text/javascript" ></script>
 <script src="./assets/js/HTSscript.js" type="text/javascript" ></script>
 </body>
