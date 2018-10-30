@@ -285,3 +285,6 @@ select {
 	border: none !important;
 	margin: 3px;
 }
+.formdes {
+	font-size: 12px;
+}
